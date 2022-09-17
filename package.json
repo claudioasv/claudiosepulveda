@@ -1,0 +1,19 @@
+{
+  "name": "claudiosepulveda",
+  "version": "1.0.0",
+  "description": "Una web personal de claudioasv minimalista.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudioasv/claudiosepulveda.git"
+  },
+  "author": "Claudio Sepúlveda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudioasv/claudiosepulveda/issues"
+  },
+  "homepage": "https://github.com/claudioasv/claudiosepulveda#readme"
+}
