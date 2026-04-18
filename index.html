@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -20,81 +20,250 @@
   <meta name="twitter:image" content="https://casv.dev/img/casvhorizontallogo.png" />
   <meta name="twitter:site" content="@claudioasv" />
   <meta name="twitter:creator" content="@claudioasv" />
-  <link href="/img/favicon.ico" rel="icon" type="image/png" />
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-soft {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .bg-aurora {
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(99, 102, 241, 0.18), transparent 60%),
+        radial-gradient(900px 500px at 110% 10%, rgba(16, 185, 129, 0.12), transparent 60%),
+        radial-gradient(800px 500px at 50% 120%, rgba(236, 72, 153, 0.10), transparent 60%);
+    }
+  </style>
 </head>
 
-<body class="antialiased text-slate-400 bg-slate-900">
-  <div class="flex-block max-w-xl p-4 md:pd-8 mx-auto mt-8">
-    <div class="bg-white shadow overflow-hidden rounded-lg">
-      <div class="px-4 py-5 sm:px-6 flex justify-between">
-        <div>
-          <h1 class="text-xl leading-6 font-bold text-gray-900">
-            Claudio Sepúlveda CL
+<body class="antialiased text-slate-300 bg-slate-950 bg-aurora min-h-screen">
+  <main class="max-w-2xl mx-auto px-4 sm:px-6 pt-10 pb-16">
+
+    <!-- Profile Card -->
+    <section
+      class="glass rounded-2xl shadow-2xl shadow-black/40 overflow-hidden transition duration-300 hover:border-white/20">
+      <div class="px-6 py-7 sm:px-8 flex items-center gap-6">
+        <div class="flex-1 min-w-0">
+          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+            Claudio Sepúlveda
           </h1>
-          <h2 class="text-sm leading-6 text-gray-500 -mt-1">@claudioasv</h2>
-          <p class="mt-1 max-w-2xl text-sm text-gray-500">
-            Desarrollador en Holding Surfrut - #JavaScript #vue
-            #ionic #web #mvc
+          <p class="text-sm font-medium text-indigo-300/90 mt-0.5">@claudioasv</p>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Desarrollador Full Stack en Holding Surfrut
           </p>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Vue</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Nuxt</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-orange-500/10 text-orange-300 border border-orange-500/20">Astro</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">JavaScript</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">PHP</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-fuchsia-500/10 text-fuchsia-300 border border-fuchsia-500/20">IA</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">MCP</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">Linux</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">Windows
+              Server</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-pink-500/10 text-pink-300 border border-pink-500/20">Web</span>
+            <span
+              class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">MVC</span>
+          </div>
         </div>
-        <div>
-          <img class="rounded-full w-48" src="foto_casv.png" alt="Claudio Sepúlveda" />
-        </div>
-      </div>
-      <div class="border-t border-gray-200">
-        <div class="bg-gray-50 px-4 py-5 w-full flex space-x-0.5">
-          <div class="mt-1 text-sm text-gray-900 text-justify">
-            Trabajo como Desarrollador para las empresas que conforman el Holding Surfrut, empresas dedicadas a la
-            producción de alimentos saludables para las personas. Involucrándose desde la cosecha hasta la exportación de los productos a diferentes paises.
-            <div class="mt-6 flex space-x-4">
-              <a href="https://github.com/claudioasv" target="_blank">
-                <svg class="w-6 h-6 cursor-pointer text-gray-400 hover:text-[#6e5494] fill-current"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-              </a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=claudio@casv.dev" target="_blank">
-                <svg class="w-6 h-6 cursor-pointer text-gray-400 hover:text-grey-300"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                </svg>
-              </a>
-              <a href="https://twitter.com/claudioasv1" target="_blank">
-                <svg class="w-6 h-6 cursor-pointer text-gray-400 hover:text-blue-300 fill-current"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/claudioasv/" target="_blank">
-                <svg class="w-6 h-6 cursor-pointer text-gray-400 hover:text-blue-500 fill-current"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                  </path>
-                </svg>
-              </a>
+        <div class="shrink-0">
+          <div class="relative">
+            <div
+              class="absolute -inset-1 rounded-full bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-emerald-400 opacity-70 blur-sm">
             </div>
+            <img class="relative rounded-full w-28 h-28 sm:w-36 sm:h-36 object-cover ring-2 ring-slate-900"
+              src="foto_casv.png" alt="Claudio Sepúlveda" />
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- <div class="flex-block max-w-xl p-4 md:pd-8 mx-auto mt-8">
-    <div class="bg-white shadow overflow-hidden rounded-lg">
-      <div class="px-4 py-5 sm:px-6 flex justify-between">
-    cuadrado
-    </div>
-    </div>
-  </div> -->
-  <div class="flex-block max-w-xl p-4 md:pd-8 mx-auto mt-2 text-center">
-    desde Curicó, Chile.
-  </div>
 
+      <div class="border-t border-white/5">
+        <div class="px-6 py-6 sm:px-8">
+          <p class="text-sm leading-relaxed text-slate-300/90 text-justify">
+            Trabajo como Desarrollador para las empresas que conforman el Holding Surfrut, dedicadas a la
+            producción de alimentos saludables. Involucrándose desde la cosecha hasta la exportación de los productos a
+            diferentes países.
+          </p>
+
+          <div class="mt-6 flex items-center gap-5">
+            <a href="https://github.com/claudioasv" target="_blank" rel="noopener" aria-label="GitHub"
+              class="text-slate-500 hover:text-white transition-all duration-200 hover:-translate-y-0.5">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=claudio@casv.dev" target="_blank" rel="noopener"
+              aria-label="Email"
+              class="text-slate-500 hover:text-rose-400 transition-all duration-200 hover:-translate-y-0.5">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/claudioasv1" target="_blank" rel="noopener" aria-label="Twitter"
+              class="text-slate-500 hover:text-sky-400 transition-all duration-200 hover:-translate-y-0.5">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/claudioasv/" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="text-slate-500 hover:text-blue-400 transition-all duration-200 hover:-translate-y-0.5">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sistemas / Proyectos -->
+    <section class="mt-8">
+      <div class="flex items-center gap-3 px-1 mb-4">
+        <h2 class="text-lg font-bold text-white tracking-tight">Proyectos</h2>
+        <div class="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+      </div>
+
+      <div class="space-y-3">
+
+        <!-- VetApp -->
+        <a href="https://vetapp.cl" target="_blank" rel="noopener"
+          class="group glass rounded-2xl p-5 flex items-start gap-4 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06] hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30">
+          <div
+            class="shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/20 flex items-center justify-center text-emerald-300">
+            <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5v1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3v-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z" />
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <h3 class="text-base font-semibold text-white group-hover:text-emerald-300 transition-colors">VetApp</h3>
+              <span class="text-[10px] font-mono text-slate-500">vetapp.cl</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-400 leading-relaxed">
+              Plataforma web para la gestión completa de veterinarias.
+            </p>
+          </div>
+          <div
+            class="shrink-0 text-slate-500 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- URES -->
+        <a href="https://ures.cl" target="_blank" rel="noopener"
+          class="group glass rounded-2xl p-5 flex items-start gap-4 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06] hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30">
+          <div
+            class="shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 border border-indigo-500/20 flex items-center justify-center text-indigo-300">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <h3 class="text-base font-semibold text-white group-hover:text-indigo-300 transition-colors">URES</h3>
+              <span class="text-[10px] font-mono text-slate-500">ures.cl</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-400 leading-relaxed">
+              Sistema de reserva de recursos (arriendo), orientado a empresas que ofrecen algún tipo de arriendo.
+            </p>
+          </div>
+          <div
+            class="shrink-0 text-slate-500 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Portal de Servicios -->
+        <a href="https://servicios.casv.dev" target="_blank" rel="noopener"
+          class="group glass rounded-2xl p-5 flex items-start gap-4 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06] hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/30">
+          <div
+            class="shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-500/20 border border-amber-500/20 flex items-center justify-center text-amber-300">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="text-base font-semibold text-white group-hover:text-amber-300 transition-colors">Portal de
+                Servicios</h3>
+              <span
+                class="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+                Acceso privado
+              </span>
+              <span class="text-[10px] font-mono text-slate-500">servicios.casv.dev</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-400 leading-relaxed">
+              Portal privado para clientes donde pueden revisar el historial de los servicios informáticos prestados.
+            </p>
+          </div>
+          <div
+            class="shrink-0 text-slate-500 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer class="mt-10 text-center text-xs text-slate-500">
+      desde Curicó, Chile.
+    </footer>
+
+  </main>
 </body>
 
 </html>
