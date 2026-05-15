@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Claudio Sepúlveda · Tarjeta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .bg-aurora {
+      background:
+        radial-gradient(700px 500px at 10% -10%, rgba(99, 102, 241, 0.28), transparent 60%),
+        radial-gradient(600px 500px at 110% 10%, rgba(16, 185, 129, 0.20), transparent 60%),
+        radial-gradient(600px 500px at 50% 120%, rgba(236, 72, 153, 0.18), transparent 60%),
+        #020617;
+    }
+
+    /* Tarjeta: proporción vertical tipo business card */
+    .card {
+      width: 600px;
+    }
+
+    .photo-ring::before {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border-radius: 9999px;
+      background: linear-gradient(to top right, #6366f1, #d946ef, #10b981);
+      opacity: 0.75;
+      filter: blur(6px);
+      z-index: 0;
+    }
+
+    .qr-glow::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.6), rgba(16, 185, 129, 0.5), rgba(236, 72, 153, 0.5));
+      filter: blur(10px);
+      opacity: 0.55;
+      z-index: 0;
+    }
+
+    @media print {
+      body { background: #020617 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .no-print { display: none !important; }
+      .card { box-shadow: none !important; }
+    }
+  </style>
+</head>
+
+<body class="antialiased text-slate-300 bg-slate-950 min-h-screen flex items-center justify-center p-6">
+
+  <!-- Ayuda para capturar -->
+  <div class="no-print fixed top-4 left-1/2 -translate-x-1/2 text-[11px] text-slate-500 bg-slate-900/70 border border-white/10 rounded-full px-3 py-1">
+    Haz captura de la tarjeta o <kbd class="px-1 rounded bg-white/10">Cmd/Ctrl + P</kbd> → Guardar como PDF
+  </div>
+
+  <!-- Tarjeta vertical -->
+  <section class="card bg-aurora rounded-[28px] overflow-hidden shadow-2xl shadow-black/60 relative">
+
+    <!-- Glow bordes -->
+    <div class="absolute inset-0 pointer-events-none ring-1 ring-white/10 rounded-[28px]"></div>
+
+    <div class="relative h-full flex flex-col p-8">
+
+      <!-- Header -->
+      <div class="flex items-start justify-between">
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span class="text-[11px] font-medium text-emerald-300">Abierto a oportunidades</span>
+        </div>
+        <span class="text-[11px] font-mono text-slate-500 tracking-wider">casv.dev</span>
+      </div>
+
+      <!-- Foto + Nombre -->
+      <div class="mt-7 flex flex-col items-center text-center">
+        <div class="relative photo-ring">
+          <img class="relative rounded-full w-32 h-32 object-cover ring-2 ring-slate-900 z-10"
+            src="foto_casv.png" alt="Claudio Sepúlveda" />
+        </div>
+        <h1 class="mt-5 text-3xl font-extrabold tracking-tight text-white">
+          Claudio Sepúlveda
+        </h1>
+        <div class="mt-1.5 flex items-center justify-center gap-2 text-sm">
+          <span class="font-medium text-indigo-300/90">@claudioasv</span>
+          <span class="text-slate-600">·</span>
+          <span class="inline-flex items-center gap-1 text-slate-400">
+            <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            Curicó, Chile
+          </span>
+        </div>
+        <p class="mt-2 text-sm text-slate-400">
+          Desarrollador Full Stack · +7 años
+        </p>
+      </div>
+
+      <!-- Tags -->
+      <div class="mt-5 flex flex-wrap justify-center gap-1.5">
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Vue</span>
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Nuxt</span>
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-orange-500/10 text-orange-300 border border-orange-500/20">Astro</span>
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">JavaScript</span>
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">PHP</span>
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-fuchsia-500/10 text-fuchsia-300 border border-fuchsia-500/20">IA</span>
+        <span class="px-2 py-0.5 text-[11px] font-medium rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">MCP</span>
+      </div>
+
+      <!-- QR -->
+      <div class="mt-8 flex flex-col items-center">
+        <div class="relative qr-glow">
+          <div class="relative bg-white rounded-2xl p-3 z-10">
+            <img src="img/casv-qr.png" alt="vCard QR" class="w-44 h-44 block" />
+          </div>
+        </div>
+        <p class="mt-4 text-xs text-slate-400 tracking-wide uppercase">
+          Escanea para guardar mi contacto
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-xs">
+        <div class="flex items-center gap-2 text-slate-400">
+          <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          claudio@casv.dev
+        </div>
+        <div class="flex items-center gap-3 text-slate-500">
+          <span>github.com/claudioasv</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
